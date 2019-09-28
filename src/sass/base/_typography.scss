@@ -1,0 +1,43 @@
+body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    padding: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.heading {
+    backface-visibility: hidden;
+    margin-bottom: 50px;
+
+    &__container {
+        top: 40%;
+        display: block;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        color: white;
+        left: 50%;
+        text-align: center;
+    }
+}
+
+.heading-primary {
+    font-size: 100px;
+    animation-name: leftToRight;
+    animation-duration: .3s;
+    letter-spacing: .6rem;
+}
+
+.heading-primary,
+.heading-secondary {
+    text-transform: uppercase;
+    display: block;
+}
+
+.heading-secondary {
+    font-size: 30px;
+    letter-spacing: 1rem;
+    animation-name: rightToLeft;
+    animation-duration: .3s;
+}
