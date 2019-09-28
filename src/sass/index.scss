@@ -7,6 +7,8 @@ Dark green: #293462
 font-color: #f76262
 other: #fff1c1; 
 */
+// $color-pink: #c0034c86;
+
 * {
     margin: 0;
     padding: 0;
@@ -42,19 +44,20 @@ body {
     fill: azure;
 }
 
-.heading-container {
-    top: 40%;
-    display: block;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    color: white;
-    left: 50%;
-    text-align: center;
-}
 
 .heading {
     backface-visibility: hidden;
     margin-bottom: 50px;
+
+    &__container {
+        top: 40%;
+        display: block;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        color: white;
+        left: 50%;
+        text-align: center;
+    }
 }
 
 .heading-primary {
@@ -92,10 +95,6 @@ body {
 }
 
 .btn {
-    &:active {
-        transform: translateY(2px);
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    }
 
     &::after {
 
@@ -125,6 +124,11 @@ body {
     &:link,
     :visited {
         @include btnActiveVisitedStyle();
+    }
+
+    &:active {
+        transform: translateY(2px);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
 
 }

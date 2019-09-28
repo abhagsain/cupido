@@ -37,18 +37,17 @@ body {
   height: 60px;
   fill: azure; }
 
-.heading-container {
-  top: 40%;
-  display: block;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  color: white;
-  left: 50%;
-  text-align: center; }
-
 .heading {
   backface-visibility: hidden;
   margin-bottom: 50px; }
+  .heading__container {
+    top: 40%;
+    display: block;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: white;
+    left: 50%;
+    text-align: center; }
 
 .heading-primary {
   font-size: 100px;
@@ -66,10 +65,6 @@ body {
   letter-spacing: 1rem;
   animation-name: rightToLeft;
   animation-duration: .3s; }
-
-.btn:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
 
 .btn::after {
   content: "";
@@ -103,6 +98,10 @@ body {
   font-size: 1.3rem;
   transition: all 0.1s;
   position: relative; }
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
 
 .btn-white {
   color: #333;

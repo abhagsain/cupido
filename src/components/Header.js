@@ -7,7 +7,7 @@ export default class Header extends Component {
         <div class="logo-box">
           <img src={logo} alt="logo" id="logo"></img>
         </div>
-        <div class=" heading-container">
+        <div class="heading__container">
           <h1 class="heading">
             <span class="heading-primary">cupido</span>
             <span class="heading-secondary">Discover Love</span>
