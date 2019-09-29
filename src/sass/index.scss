@@ -8,7 +8,9 @@ font-color: #f76262
 other: #fff1c1; 
 */
 @import "./abstract/variables";
+@import "./abstract/mixins";
 @import "./layout/header";
+@import "./layout/grid";
 @import "./base/animations";
 @import "./base/base";
 @import "./base/typography";
