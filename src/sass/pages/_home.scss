@@ -1,0 +1,31 @@
+.section {
+
+    &__info {
+        background: $color-gray-1;
+        padding: 20rem 0;
+        margin-top: -10vh;
+
+    }
+
+    &__heading--secondary {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        display: inline-block;
+        color: transparent;
+        background: black;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-weight: 700;
+
+        span {
+            display: block;
+        }
+
+        &:hover {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.925), rgba(0, 0, 0, 0.87));
+            background-clip: text;
+            -webkit-background-clip: text;
+
+        }
+    }
+}

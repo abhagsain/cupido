@@ -4,20 +4,21 @@ COLORS:
 Light green: #7ed56f
 Medium green: #216583
 Dark green: #293462
-font-color: #f76262
+font-colFor: #f76262
 other: #fff1c1; 
 */
 .header {
   height: 95vh;
   position: relative;
-  background-image: linear-gradient(to right, #c0034c86, #ec38bccc), url("../assests/dating-bg.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), #199ff9c0), url("../assests/dating-bg.jpg");
   background-size: cover;
   background-position: center 80%;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%); }
 
 .row {
-  max-width: 114rem;
-  margin: 0 auto; }
+  max-width: 150rem;
+  margin: 0 auto;
+  font-size: 2rem; }
   .row:after {
     content: "";
     display: table;
@@ -26,7 +27,8 @@ other: #fff1c1;
     margin-bottom: 5rem; }
   .row [class^="col-"] {
     height: 6rem;
-    float: left; }
+    float: left;
+    height: auto; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
   .row .col-1-of-2 {
@@ -75,10 +77,11 @@ other: #fff1c1;
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 62.5%; }
 
 .body {
-  font-size: 62.5%; }
+  background: #000; }
 
 .logo-box {
   position: absolute;
@@ -89,9 +92,23 @@ other: #fff1c1;
   height: 60px;
   fill: azure; }
 
+.u-items-center {
+  text-align: center; }
+
+.margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.margin-bottom-large {
+  margin-bottom: 10rem; }
+
+.font-bold {
+  font-weight: bold; }
+
 body {
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.7;
   color: #333;
   padding: 30px;
@@ -108,9 +125,12 @@ body {
     color: white;
     left: 50%;
     text-align: center; }
+  .heading__text {
+    font-size: 2.1rem;
+    text-transform: uppercase; }
 
 .heading-primary {
-  font-size: 100px;
+  font-size: 10rem;
   animation-name: leftToRight;
   animation-duration: .3s;
   letter-spacing: .6rem; }
@@ -121,10 +141,36 @@ body {
   display: block; }
 
 .heading-secondary {
-  font-size: 30px;
+  font-size: 3rem;
   letter-spacing: 1rem;
   animation-name: rightToLeft;
   animation-duration: .3s; }
+
+.paragraph {
+  font-size: 1.7rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 2rem; }
+
+.section__info {
+  background: #f7f7f7;
+  padding: 20rem 0;
+  margin-top: -10vh; }
+
+.section__heading--secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  color: transparent;
+  background: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 700; }
+  .section__heading--secondary span {
+    display: block; }
+  .section__heading--secondary:hover {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.925), rgba(0, 0, 0, 0.87));
+    background-clip: text;
+    -webkit-background-clip: text; }
 
 .btn::after {
   content: "";
@@ -155,7 +201,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 2rem;
   transition: all 0.1s;
   position: relative; }
 
@@ -172,3 +218,29 @@ body {
 
 .btn-animated {
   animation: bottomUp 0.3s ease-out 0.2s backwards; }
+
+.composition {
+  position: relative; }
+  .composition__image {
+    width: 55%;
+    position: absolute;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+    z-index: 0; }
+    .composition__image--1 {
+      top: -4rem;
+      left: 0; }
+    .composition__image--2 {
+      top: 1rem;
+      right: 2%; }
+    .composition__image--3 {
+      top: 10rem;
+      left: 15%; }
+    .composition__image:hover {
+      transform: scale(1.05);
+      z-index: 20;
+      transform: translateY(-0.8rem);
+      box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5); }
+  .composition:hover .composition__image:not(:hover) {
+    transform: scale(0.95);
+    opacity: 0.7; }

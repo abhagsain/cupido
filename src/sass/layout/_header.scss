@@ -1,7 +1,7 @@
 .header {
-    height: 95vh;
+    height: $header-height;
     position: relative;
-    background-image: linear-gradient(to right, $color-pink-dark, $color-pink-light), url("../assests/dating-bg.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), $color-pink-light), url("../assests/dating-bg.jpg");
     background-size: cover;
     background-position: center 80%;
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);

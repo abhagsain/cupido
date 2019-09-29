@@ -2,6 +2,7 @@
     max-width: $grid-width;
     margin: 0 auto;
     @include clearfix;
+    font-size: 2rem;
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
@@ -10,6 +11,7 @@
     [class^="col-"] {
         height: $gutter-horizontal;
         float: left;
+        height: auto;
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;

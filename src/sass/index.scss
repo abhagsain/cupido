@@ -4,7 +4,7 @@ COLORS:
 Light green: #7ed56f
 Medium green: #216583
 Dark green: #293462
-font-color: #f76262
+font-colFor: #f76262
 other: #fff1c1; 
 */
 @import "./abstract/variables";
@@ -13,5 +13,8 @@ other: #fff1c1;
 @import "./layout/grid";
 @import "./base/animations";
 @import "./base/base";
+@import "./base/utilities";
 @import "./base/typography";
+@import "./pages/home";
 @import "./components/button";
+@import "./components/composition";
