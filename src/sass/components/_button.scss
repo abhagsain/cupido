@@ -66,3 +66,18 @@
 .btn-animated {
     animation: bottomUp 0.3s ease-out 0.2s backwards;
 }
+
+.btn-colored {
+    color: #fff;
+    background-color: $color-pink-light;
+}
+
+.btn-colored {
+    &::after {
+        background: $color-pink-light;
+    }
+}
+
+.btn--profile {
+    margin-top: 8rem;
+}

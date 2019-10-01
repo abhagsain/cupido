@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./styles/index.css";
 import Header from "./components/Header";
 import Main from "./components/main/Main";
+import ProfileSection from "./components/profiles/ProfileSection";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <header className="App-header">
         <Header />
         <Main />
+        <ProfileSection />
       </header>
     </div>
   );

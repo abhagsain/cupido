@@ -219,6 +219,45 @@ body {
 .btn-animated {
   animation: bottomUp 0.3s ease-out 0.2s backwards; }
 
+.btn-colored {
+  color: #fff;
+  background-color: #199ff9c0; }
+
+.btn-colored::after {
+  background: #199ff9c0; }
+
+.btn--profile {
+  margin-top: 8rem; }
+
+.profile__section {
+  padding: 20rem 0;
+  text-align: center; }
+  .profile__section h2 {
+    display: inline-block; }
+
+.profile {
+  font-size: 2rem;
+  background: white;
+  height: 40rem; }
+  .profile__image {
+    background-size: cover;
+    width: 100%;
+    box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.4);
+    border-radius: 2rem;
+    object-fit: cover;
+    height: 100%;
+    transition: all .3s; }
+  .profile--name {
+    font-size: 2.1rem;
+    text-transform: uppercase; }
+  .profile:hover .profile__image {
+    transform: translateY(-0.4rem) scale(1.05);
+    box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 0.5);
+    cursor: pointer; }
+  .profile:active .profile__image {
+    transform: translateY(0rem) scale(1);
+    box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 0.5); }
+
 .composition {
   position: relative; }
   .composition__image {
