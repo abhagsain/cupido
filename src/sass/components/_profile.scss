@@ -1,5 +1,5 @@
 .profile__section {
-    padding: 20rem 0;
+    padding: 18rem 0;
     text-align: center;
 
     h2 {
@@ -37,6 +37,6 @@
 
     &:active &__image {
         transform: translateY(0rem) scale(1);
-        box-shadow: 0rem 0rem 4rem rgba($color: #000000, $alpha: 0.5);
+        box-shadow: 0rem 0rem 3rem rgba($color: #000000, $alpha: 0.4);
     }
 }

@@ -1,5 +1,35 @@
 import React, { Component } from "react";
-
+import Profile from "./Profile";
+const profileData = [
+  {
+    id: "Lilly, 22",
+    name: "Lilly",
+    age: "22",
+    image:
+      "https://images.unsplash.com/photo-1507527690292-7888f1022d36?ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80",
+  },
+  {
+    id: "Bianca,21",
+    name: "Bianca",
+    age: "21",
+    image:
+      "https://images.unsplash.com/photo-1550521128-32b407becb08?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+  },
+  {
+    id: "Jimmy,24",
+    name: "Jimmy",
+    age: "24",
+    image:
+      "https://images.unsplash.com/photo-1546512565-39d4dc75e556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=996&q=80",
+  },
+  {
+    id: "Nini,22",
+    name: "Nini",
+    age: "22",
+    image:
+      "https://images.unsplash.com/photo-1526265218618-bdbe4fdb5360?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+  },
+];
 export default class ProfileSection extends Component {
   render() {
     return (
@@ -8,46 +38,15 @@ export default class ProfileSection extends Component {
           Top Profiles
         </h2>
         <div className="row margin-bottom-large">
-          <div className="col-1-of-4 profile__card">
-            <div className="profile">
-              <img
-                className="profile__image  margin-bottom-small"
-                alt="profile"
-                src="https://images.unsplash.com/photo-1507527690292-7888f1022d36?ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80"
+          {profileData.map(profile => {
+            return (
+              <Profile
+                name={profile.name}
+                image={profile.image}
+                age={profile.age}
               />
-              <span className="profile--name">Lilly, 22</span>
-            </div>
-          </div>
-          <div className="col-1-of-4 profile__card">
-            <div className="profile">
-              <img
-                className="profile__image  margin-bottom-small"
-                alt="profile"
-                src="https://images.unsplash.com/photo-1550521128-32b407becb08?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-              />
-              <span className="profile--name">Bianca,21</span>
-            </div>
-          </div>
-          <div className="col-1-of-4 profile__card">
-            <div className="profile">
-              <img
-                className="profile__image  margin-bottom-small"
-                alt="profile"
-                src="https://images.unsplash.com/photo-1546512565-39d4dc75e556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=996&q=80"
-              />
-              <span className="profile--name">Jimmy,25</span>
-            </div>
-          </div>
-          <div className="col-1-of-4 profile__card">
-            <div className="profile">
-              <img
-                className="profile__image  margin-bottom-small"
-                alt="profile"
-                src="https://images.unsplash.com/photo-1526265218618-bdbe4fdb5360?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-              />
-              <span className="profile--name">Nini,22</span>
-            </div>
-          </div>
+            );
+          })}
         </div>
         <a href="#s" class="btn btn-colored btn--profile btn-animated">
           See all profiles

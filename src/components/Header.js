@@ -4,16 +4,16 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        <header class="header">
-          <div class="logo-box">
+        <header className="header">
+          <div className="logo-box">
             <img src={logo} alt="logo" id="logo"></img>
           </div>
-          <div class="heading__container">
-            <h1 class="heading">
-              <span class="heading-primary">Cupido</span>
-              <span class="heading-secondary">Discover Love</span>
+          <div className="heading__container">
+            <h1 className="heading">
+              <span className="heading-primary">Cupido</span>
+              <span className="heading-secondary">Discover Love</span>
             </h1>
-            <a href="#s" class="btn btn-white btn-animated">
+            <a href="#s" className="btn btn-white btn-animated">
               Find A Partner
             </a>
           </div>

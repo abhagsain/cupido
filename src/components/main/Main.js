@@ -12,7 +12,7 @@ export default function Main() {
             </h2>
           </div>
         </div>
-        <div className="row">
+        <div className="row margin-bottom-large">
           <div className="col-1-of-2">
             <div className="heading__text margin-bottom-small font-bold">
               Matching compatible partner
