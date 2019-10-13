@@ -1,7 +1,9 @@
 .header {
     height: $header-height;
     position: relative;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), $color-pink-light), url("../assests/dating-bg.jpg");
+    background-image: url("../../assests/dating-bg.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(black, 0.4)), url("../../assests/dating-bg.jpg");
+    // filter: brightness(60%);
     background-size: cover;
     background-position: center 80%;
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);

@@ -1,42 +1,40 @@
 .composition {
-    position: relative;
+  position: relative;
 
-    &__image {
-        width: 55%;
-        position: absolute;
-        box-shadow: 0 2rem 4rem rgba($color: #000000, $alpha: 0.3);
-        transition: all 0.2s;
-        z-index: 0;
+  &__image {
+    width: 55%;
+    position: absolute;
+    box-shadow: 0 2rem 4rem rgba($color: #000000, $alpha: 0.3);
+    transition: all 0.2s;
+    z-index: 0;
 
-        &--1 {
-            top: -4rem;
-            left: 0;
-        }
-
-        &--2 {
-            top: 1rem;
-            right: 2%;
-        }
-
-        &--3 {
-            top: 10rem;
-            left: 15%;
-        }
-
-        &:hover {
-            transform: scale(1.05);
-            z-index: 20;
-            transform: translateY(-.8rem);
-            box-shadow: 0 2rem 5rem rgba($color: #000000, $alpha: 0.5);
-            filter: brightness(100%);
-        }
-
+    &--1 {
+      top: -4rem;
+      left: 0;
     }
 
-    &:hover &__image:not(:hover) {
-        transform: scale(.95);
-        // opacity: 0.7;
-        filter: brightness(50%) blur(2px);
-
+    &--2 {
+      top: 1rem;
+      right: 2%;
     }
+
+    &--3 {
+      top: 10rem;
+      left: 15%;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      z-index: 20;
+      transform: translateY(-0.8rem);
+      box-shadow: 0 2rem 5rem rgba($color: #000000, $alpha: 0.5);
+      filter: brightness(100%);
+    }
+  }
+
+  &:hover &__image:not(:hover) {
+    transform: scale(0.95);
+    // opacity: 0.7;
+    filter: brightness(50%) blur(2px);
+  }
 }

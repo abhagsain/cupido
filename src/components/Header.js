@@ -13,7 +13,7 @@ export default class Header extends Component {
               <span className="heading-primary">Cupido</span>
               <span className="heading-secondary">Discover Love</span>
             </h1>
-            <a href="#s" className="btn btn-white btn-animated">
+            <a href="#s" className="btn btn-animated">
               Find A Partner
             </a>
           </div>

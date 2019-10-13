@@ -48,7 +48,7 @@ export default class ProfileSection extends Component {
             );
           })}
         </div>
-        <a href="#s" class="btn btn-colored btn--profile btn-animated">
+        <a href="#s" class="btn  btn--profile btn-animated">
           See all profiles
         </a>
       </section>

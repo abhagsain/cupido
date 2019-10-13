@@ -1,10 +1,11 @@
 import React from "react";
 import logo from "./logo.svg";
-import "./styles/index.css";
+import "./sass/index.scss";
 import Header from "./components/Header";
 import Main from "./components/main/Main";
 import ProfileSection from "./components/profiles/ProfileSection";
 import Testimonials from "./components/testimonials/Testimonials";
+import Form from "./components/form/Form";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <ProfileSection />
         <Main />
         <Testimonials />
+        <Form />
       </header>
     </div>
   );
