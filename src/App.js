@@ -6,17 +6,17 @@ import Main from "./components/main/Main";
 import ProfileSection from "./components/profiles/ProfileSection";
 import Testimonials from "./components/testimonials/Testimonials";
 import Form from "./components/form/Form";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Header />
-        <ProfileSection />
-        <Main />
-        <Testimonials />
-        <Form />
-      </header>
+      <Header />
+      <ProfileSection />
+      <Main />
+      <Testimonials />
+      <Form />
+      <Footer />
     </div>
   );
 }
