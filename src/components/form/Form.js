@@ -20,7 +20,7 @@ export default class Form extends Component {
                     className="input"
                     required
                   />
-                  <label for="name" className="input--label">
+                  <label htmlFor="name" className="input--label">
                     Full Name
                   </label>
                 </div>
@@ -32,7 +32,7 @@ export default class Form extends Component {
                     placeholder="Email"
                     className="input"
                   />
-                  <label for="email" className="input--label">
+                  <label htmlFor="email" className="input--label">
                     Email
                   </label>
                 </div>

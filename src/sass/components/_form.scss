@@ -15,7 +15,7 @@
     background-size: cover;
     background-position: right;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.167);
+    box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.167);
 }
 
 .form__container {
@@ -28,7 +28,7 @@
         font-size: 1.5rem;
 
         &:not(:last-child) {
-            margin-bottom: 1.4rem;
+            margin-bottom: 1rem;
         }
     }
 

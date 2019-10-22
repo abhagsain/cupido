@@ -41,6 +41,7 @@ export default class ProfileSection extends Component {
           {profileData.map(profile => {
             return (
               <Profile
+                key={profile.id}
                 name={profile.name}
                 image={profile.image}
                 age={profile.age}
@@ -48,7 +49,7 @@ export default class ProfileSection extends Component {
             );
           })}
         </div>
-        <a href="#s" class="btn  btn--profile btn-animated">
+        <a href="#s" className="btn  btn--profile btn-animated">
           See all profiles
         </a>
       </section>
