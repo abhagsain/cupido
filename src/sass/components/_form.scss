@@ -5,7 +5,6 @@
 }
 
 .form {
-    // height: 50rem;
     padding: 13rem 1rem;
     width: 90%;
     margin: 0 auto;
@@ -16,14 +15,40 @@
     background-position: right;
     border-radius: 3px;
     box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.167);
+
+    @include respond(tabPort) {
+        width: 100%;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.582),
+                rgba(255, 255, 255, 0.575)), url("../../assests/form-bg.jpg");
+        background-position: center;
+    }
 }
 
 .form__container {
-    padding: 1rem 6rem;
+    padding: 1rem 4rem;
     width: 40%;
 
+    @include respond(tabPort) {
+        width: 100%;
+        text-align: center;
+    }
+
+    @include respond(phone) {}
+
+
     .input__group {
-        width: 80%;
+        width: 90%;
+
+        @include respond(tabPort) {
+            width: 100%;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        @include respond(phone) {
+            max-width: 100%;
+        }
+
         color: $color-gray-2;
         font-size: 1.5rem;
 
