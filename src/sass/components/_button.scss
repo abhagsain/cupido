@@ -84,4 +84,8 @@
 
 .btn--profile {
     margin-top: 8rem;
+
+    @include respond(tabPort) {
+        margin-top: 0rem;
+    }
 }

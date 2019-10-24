@@ -7,7 +7,6 @@ export default function Main() {
           <div className="u-items-center margin-bottom-large ">
             <h2 className="section__heading--secondary">
               Tired of being alone?
-              <span>Discover people you’ll really click with</span>
             </h2>
           </div>
         </div>

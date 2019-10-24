@@ -1,6 +1,10 @@
 .profile__section {
-    padding: 18rem 0;
+    padding: 15rem 0;
     text-align: center;
+
+    @include respond(tabPort) {
+        padding: 10rem 0;
+    }
 
     h2 {
         display: inline-block;
@@ -12,6 +16,14 @@
     font-size: 2rem;
     background: white;
     height: 40rem;
+
+    @include respond(tabPort) {
+        height: 60rem;
+    }
+
+    @include respond(phone) {
+        height: 70rem;
+    }
 
     &__image {
         background-size: cover;
@@ -27,6 +39,10 @@
     &--name {
         font-size: 2.1rem;
         text-transform: uppercase;
+
+        @include respond(phone) {
+            font-size: 2.5rem;
+        }
     }
 
     &:hover &__image {

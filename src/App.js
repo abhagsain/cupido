@@ -18,11 +18,13 @@ function App() {
       {/* <Menu /> */}
       <Container>
         <Header />
-        <ProfileSection />
-        <Main />
-        <Testimonials />
-        <Form />
-        <Footer />
+        <div className="p-">
+          <ProfileSection />
+          <Main />
+          <Testimonials />
+          <Form />
+          <Footer />
+        </div>
       </Container>
     </div>
   );
