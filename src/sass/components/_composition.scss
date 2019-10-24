@@ -1,3 +1,18 @@
+.section__info {
+
+  background: #f7f7f7;
+  padding: 20rem 0;
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  @include respond(tabLand) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+}
+
 .composition {
   position: relative;
 
@@ -28,7 +43,10 @@
       right: 2%;
 
       @include respond(tabPort) {
-        top: 0;
+        top: -5px;
+        left: 0px;
+        transform: scale(1.14);
+        z-index: 20;
       }
     }
 

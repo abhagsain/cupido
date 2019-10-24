@@ -7,6 +7,13 @@
 }
 
 @mixin respond($breakpoint) {
+    @if $breakpoint==xs {
+
+        @media screen and (max-width: 20em) {
+            @content
+        }
+    }
+
     @if $breakpoint==phone {
 
         @media screen and (max-width: 37.5em) {

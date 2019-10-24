@@ -31,21 +31,42 @@ export default function Main() {
           </div>
           <div className="col-1-of-2">
             <div className="composition">
-              <img
-                src={require("../../assests/couple-image-1.jpg")}
-                alt="img-1"
-                className="composition__image composition__image--1"
-              />
-              <img
-                src={require("../../assests/couple-image-2.jpg")}
-                alt="img-3"
-                className="composition__image composition__image--2"
-              />
-              <img
-                src={require("../../assests/couple-image-3.jpg")}
-                alt="img-3"
-                className="composition__image composition__image--3"
-              />
+              <picture>
+                <source
+                  media="(max-width:37.5em)"
+                  srcSet={`${require("../../assests/couple-image-1-1x.jpg")} 1x,
+                          ${require("../../assests/couple-image-1-2x.jpg")} 2x`}
+                />
+                <img
+                  src={require("../../assests/couple-image-1-2x.jpg")}
+                  alt="img-1"
+                  className="composition__image composition__image--1"
+                />
+              </picture>
+              <picture>
+                <source
+                  media="(max-width:37.5em)"
+                  srcSet={`${require("../../assests/couple-image-2-1x.jpg")} 1x,
+                          ${require("../../assests/couple-image-2-2x.jpg")} 2x`}
+                />
+                <img
+                  src={require("../../assests/couple-image-2-1x.jpg")}
+                  alt="img-3"
+                  className="composition__image composition__image--2"
+                />
+              </picture>
+              <picture>
+                <source
+                  media="(max-width:37.5em)"
+                  srcSet={`${require("../../assests/couple-image-3-1x.jpg")} 1x,
+                        ${require("../../assests/couple-image-3-2x.jpg")} 2x`}
+                />
+                <img
+                  src={require("../../assests/couple-image-3-1x.jpg")}
+                  alt="img-3"
+                  className="composition__image composition__image--3"
+                />
+              </picture>
             </div>
           </div>
         </div>

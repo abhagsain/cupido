@@ -22,6 +22,12 @@
                 rgba(255, 255, 255, 0.575)), url("../../assests/form-bg.jpg");
         background-position: center;
     }
+
+    @include respond(xs) {
+        width: 90%;
+        // margin: 0 2rem;
+
+    }
 }
 
 .form__container {
@@ -33,20 +39,21 @@
         text-align: center;
     }
 
-    @include respond(phone) {}
 
 
     .input__group {
         width: 90%;
 
         @include respond(tabPort) {
-            width: 100%;
+            width: 60%;
             max-width: 80%;
             margin: 0 auto;
         }
 
         @include respond(phone) {
             max-width: 100%;
+            width: 90%;
+
         }
 
         color: $color-gray-2;

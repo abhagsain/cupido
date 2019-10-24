@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 export default class Testimonials extends Component {
   render() {
+    const img11 = require("../../assests/test-1-1x.jpg");
+    const img12 = require("../../assests/test-1-2x.jpg");
+    const img21 = require("../../assests/test-2-1x.jpg");
+    const img22 = require("../../assests/test-2-2x.jpg");
+    const srcSet1 = `${img11} 1x, ${img12} 2x`;
+    const srcSet2 = `${img21} 1x, ${img22} 2x`;
     /* 
     https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1031&q=80
      */
@@ -12,11 +18,10 @@ export default class Testimonials extends Component {
         <div className="row">
           <div className="testimonial__section">
             <figure className="testimonial__image">
-              <img
-                src="https://images.unsplash.com/photo-1501901609772-df0848060b33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-                alt=""
-                className="testimonial--portrait"
-              />
+              <picture>
+                <source media="(max-width:37.5em)" srcset={srcSet1} />
+                <img src={img12} alt="" className="testimonial--portrait" />
+              </picture>
               <figcaption className="testimonial--caption">
                 Hannah Smith
               </figcaption>
@@ -37,11 +42,10 @@ export default class Testimonials extends Component {
         <div className="row">
           <div className="testimonial__section">
             <figure className="testimonial__image">
-              <img
-                src="https://images.unsplash.com/photo-1541089404510-5c9a779841fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-                alt=""
-                className="testimonial--portrait"
-              />
+              <picture>
+                <source media="(max-width:37.5em)" srcset={srcSet2} />
+                <img src={img21} alt="" className="testimonial--portrait" />
+              </picture>
               <figcaption className="testimonial--caption">Judy Law</figcaption>
             </figure>
             <div className="testimonial__content">
