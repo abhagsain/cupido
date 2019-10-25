@@ -19,8 +19,13 @@ export default class Testimonials extends Component {
           <div className="testimonial__section">
             <figure className="testimonial__image">
               <picture>
-                <source media="(max-width:37.5em)" srcset={srcSet1} />
-                <img src={img12} alt="" className="testimonial--portrait" />
+                <source media="(max-width:37.5em)" srcSet={srcSet1} />
+                <img
+                  src={img12}
+                  alt=""
+                  className="testimonial--portrait"
+                  srcSet={srcSet1}
+                />
               </picture>
               <figcaption className="testimonial--caption">
                 Hannah Smith
@@ -43,8 +48,13 @@ export default class Testimonials extends Component {
           <div className="testimonial__section">
             <figure className="testimonial__image">
               <picture>
-                <source media="(max-width:37.5em)" srcset={srcSet2} />
-                <img src={img21} alt="" className="testimonial--portrait" />
+                <source media="(max-width:37.5em)" srcSet={srcSet2} />
+                <img
+                  src={img21}
+                  alt=""
+                  className="testimonial--portrait"
+                  srcSet={srcSet2}
+                />
               </picture>
               <figcaption className="testimonial--caption">Judy Law</figcaption>
             </figure>

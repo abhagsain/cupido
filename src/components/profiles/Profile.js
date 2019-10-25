@@ -9,6 +9,7 @@ export default class Profile extends Component {
           <picture>
             <source media="(max-width:40.5em)" srcSet={srcSet} sizes="" />
             <img
+              srcSet={srcSet}
               className="profile__image  margin-bottom-small"
               alt="profile"
               src={large}
